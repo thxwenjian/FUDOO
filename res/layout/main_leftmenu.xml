@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginRight="100dp">
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="5"
+                  android:orientation="vertical"
+            >
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="6"
+                        android:background="#FF568CE0">
+            <ImageView android:id="@+id/account_icon"
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:layout_centerInParent="true"
+                       android:background="@drawable/circle_icon"/>
+            <TextView android:id="@+id/menu_exit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginRight="10dp"
+                      android:textColor="@android:color/white"
+                      android:text="EXIT"/>
+            <TextView android:id="@+id/account_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentBottom="true"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginBottom="6dp"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="@android:color/white"
+                      android:text="毽子"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentBottom="true"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginBottom="6dp"
+                      android:layout_marginRight="10dp"
+                      android:textColor="@android:color/white"
+                      android:text="MORE"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="0dp"
+                      android:orientation="vertical"
+                      android:layout_weight="4">
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1">
+                <TextView android:id="@+id/menu_favourite"
+                          android:layout_width="0dp"
+                          android:layout_height="fill_parent"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:background="@drawable/boder_leftmenu_item"
+                          android:text="收藏"/>
+                <TextView android:id="@+id/menu_draft"
+                          android:layout_width="0dp"
+                          android:layout_height="fill_parent"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:background="@drawable/boder_leftmenu_item"
+                          android:text="草稿"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1">
+                <TextView android:id="@+id/menu_search"
+                          android:layout_width="0dp"
+                          android:layout_height="fill_parent"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:background="@drawable/boder_leftmenu_item"
+                          android:text="搜索"/>
+                <TextView android:id="@+id/menu_setting"
+                          android:layout_width="0dp"
+                          android:layout_height="fill_parent"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:background="@drawable/boder_leftmenu_item"
+                          android:text="设置"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="6"
+            android:background="#FFFFFF">
+        <ListView android:id="@+id/content_classify_list"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
